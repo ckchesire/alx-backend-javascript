@@ -1,4 +1,3 @@
-```markdown
 # JavaScript Promises, Error Handling, and Async/Await
 
 ## What is a Promise?
@@ -57,7 +56,7 @@ myPromise
 | `Promise.race([p1, p2])`   | Resolves or rejects as soon as any promise settles.              |
 | `Promise.allSettled([...])`| Resolves when all promises settle, regardless of the outcome.    |
 | `Promise.any([...])`       | Resolves when any promise is fulfilled. Rejects if all fail.     |
-
+`
 ## Error Handling with `try`, `catch`, and `throw`
 
 Using traditional `try/catch`:
