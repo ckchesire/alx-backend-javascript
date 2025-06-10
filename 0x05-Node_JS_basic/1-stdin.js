@@ -1,12 +1,29 @@
 /*
 * Program to take in user input from stdin and display the appropriate message
 */
-process.stdout.write('Welcome to ALX, what is your name?\n');
+const { isTTY } = process.stdin;
 
-process.stdin.on('data', (data) => {
-  process.stdout.write(`Your name is: ${data}`);
-});
+function askUserName() {
+  process.stdout.write('Welcome to ALX, what is your name?\n');
 
-process.stdin.on('end', () => {
-  process.stdout.write('This important software is now closing\n');
-});
+  process.stdin.on('data', (data) => {
+    process.stdout.write(`Your name is: ${data}`);
+    if (isTTY) {
+      process.exit();
+    }
+  });
+
+  process.stdin.on('end', () => {
+    process.stdout.write('This important software is now closing\n');
+  });
+
+  process.stdin.on('exit', () => {
+    process.exit();
+  });
+}
+
+module.exports = askUserName;
+
+if (require.main === module) {
+  askUserName();
+}
