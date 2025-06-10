@@ -1,5 +1,5 @@
 /*
-* Function to count no. of students by field from a CSV file.
+* Counts no. of students by field from a CSV file read synchronously.
 */
 const fs = require('fs');
 
