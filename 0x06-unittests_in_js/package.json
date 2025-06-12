@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This guide covers essential concepts and examples for writing effective tests using **Mocha**, along with **Chai**, **Sinon**, and **Supertest** in a Node.js environment.",
   "main": "0-calcul.js",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^5.2.0"
+  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.5",
     "eslint": "^9.28.0",
