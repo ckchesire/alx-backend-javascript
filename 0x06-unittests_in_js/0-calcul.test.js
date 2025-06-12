@@ -34,7 +34,7 @@ describe('calculateNumber', function() {
         assert.strictEqual(calculateNumber(-0.4, 0.4), 0);
     });
 
-    it('should return -1 for (-0.5, -0.4)', function () {
-        assert.strictEqual(calculateNumber(-0.5, -0.4), -1);
+    it('should return -0 for (-0.5, -0.4)', function () {
+        assert.strictEqual(calculateNumber(-0.5, -0.4), -0);
     });
 });
