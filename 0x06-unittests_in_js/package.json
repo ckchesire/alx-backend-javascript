@@ -1,0 +1,18 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "This guide covers essential concepts and examples for writing effective tests using **Mocha**, along with **Chai**, **Sinon**, and **Supertest** in a Node.js environment.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "mocha": "^11.6.0"
+  }
+}
